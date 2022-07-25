@@ -22,7 +22,7 @@ class _HashyState extends State<Hashy> {
   int quantity = 1;
   double finalPrice = 0;
 
-  Widget myRadioListTile1(int val) => RadioListTile(
+  Widget myRadioListTile1(dynamic val) => RadioListTile(
         activeColor: Colors.white,
         value: val,
         groupValue: _group1,
@@ -41,7 +41,7 @@ class _HashyState extends State<Hashy> {
         ),
       );
 
-  Widget myRadioListTile2(int val) => RadioListTile(
+  Widget myRadioListTile2(dynamic val) => RadioListTile(
         activeColor: Colors.white,
         value: val,
         groupValue: _group2,
@@ -57,7 +57,7 @@ class _HashyState extends State<Hashy> {
         ),
       );
 
-  Widget myRadioListTile3(int val) => RadioListTile(
+  Widget myRadioListTile3(dynamic val) => RadioListTile(
         activeColor: Colors.white,
         value: val,
         groupValue: _group3,
@@ -164,8 +164,8 @@ class _HashyState extends State<Hashy> {
               children: [
                 Text("التجهيز",
                     style: TextStyle(color: Colors.white, fontSize: 35)),
-                myRadioListTile3(1),
-                myRadioListTile3(2),
+                myRadioListTile3(20),
+                myRadioListTile3(21),
               ],
             ),
           ),
@@ -181,7 +181,7 @@ class _HashyState extends State<Hashy> {
                 onPressed: () {
                   if ((_group1 == 1 || _group1 == 2 || _group1 == 3) &
                       (_group2 == 11 || _group2 == 15 || _group2 == 18) &
-                      (_group3 == 1 || _group3 == 2)) {
+                      (_group3 == 20 || _group3 == 21)) {
                     OrderItem orderItem = OrderItem(
                         itemId: itemId,
                         qty: quantity,
@@ -237,7 +237,7 @@ class _HashyState extends State<Hashy> {
                 onPressed: () {
                   if ((_group1 == 1 || _group1 == 2 || _group1 == 3) &
                       (_group2 == 11 || _group2 == 15 || _group2 == 18) &
-                      (_group3 == 1 || _group3 == 2)) {
+                      (_group3 == 20 || _group3 == 21)) {
                     OrderItem orderItem = OrderItem(
                         itemId: itemId,
                         qty: quantity,

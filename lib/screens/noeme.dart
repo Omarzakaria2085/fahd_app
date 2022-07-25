@@ -22,7 +22,7 @@ class _NoemeState extends State<Noeme> {
   int quantity = 1;
   double finalPrice = 0;
 
-  Widget myRadioListTile1(int val) => RadioListTile(
+  Widget myRadioListTile1(dynamic val) => RadioListTile(
         activeColor: Colors.white,
         value: val,
         groupValue: _group1,
@@ -40,7 +40,7 @@ class _NoemeState extends State<Noeme> {
         ),
       );
 
-  Widget myRadioListTile2(int val) => RadioListTile(
+  Widget myRadioListTile2(dynamic val) => RadioListTile(
         activeColor: Colors.white,
         value: val,
         groupValue: _group2,
@@ -55,7 +55,7 @@ class _NoemeState extends State<Noeme> {
           style: TextStyle(color: Colors.white),
         ),
       );
-  Widget myRadioListTile3(int val) => RadioListTile(
+  Widget myRadioListTile3(dynamic val) => RadioListTile(
         activeColor: Colors.white,
         value: val,
         groupValue: _group3,
@@ -71,7 +71,7 @@ class _NoemeState extends State<Noeme> {
         ),
       );
 
-  Widget myRadioListTile4(int val) => RadioListTile(
+  Widget myRadioListTile4(dynamic val) => RadioListTile(
         activeColor: Colors.white,
         value: val,
         groupValue: _group4,
@@ -182,8 +182,8 @@ class _NoemeState extends State<Noeme> {
               children: [
                 Text("التجهيز",
                     style: TextStyle(color: Colors.white, fontSize: 35)),
-                myRadioListTile3(1),
-                myRadioListTile3(2),
+                myRadioListTile3(20),
+                myRadioListTile3(21),
               ],
             ),
           ),
@@ -193,9 +193,9 @@ class _NoemeState extends State<Noeme> {
               children: [
                 Text("الرأس",
                     style: TextStyle(color: Colors.white, fontSize: 35)),
-                myRadioListTile4(2),
-                myRadioListTile4(4),
-                myRadioListTile4(5),
+                myRadioListTile4(30),
+                myRadioListTile4(31),
+                myRadioListTile4(32),
               ],
             ),
           ),
@@ -220,8 +220,8 @@ class _NoemeState extends State<Noeme> {
                           _group2 == 15 ||
                           _group2 == 16 ||
                           _group2 == 17) &
-                      (_group3 == 1 || _group3 == 2) &
-                      (_group4 == 2 || _group4 == 4 || _group4 == 5)) {
+                      (_group3 == 20 || _group3 == 21) &
+                      (_group4 == 30 || _group4 == 31 || _group4 == 32)) {
                     OrderItem orderItem = OrderItem(
                         itemId: itemId,
                         qty: quantity,
@@ -286,8 +286,8 @@ class _NoemeState extends State<Noeme> {
                           _group2 == 15 ||
                           _group2 == 16 ||
                           _group2 == 17) &
-                      (_group3 == 1 || _group3 == 2) &
-                      (_group4 == 2 || _group4 == 4 || _group4 == 5)) {
+                      (_group3 == 20 || _group3 == 21) &
+                      (_group4 == 30 || _group4 == 31 || _group4 == 32)) {
                     OrderItem orderItem = OrderItem(
                         itemId: itemId,
                         qty: quantity,

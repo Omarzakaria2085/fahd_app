@@ -70,22 +70,22 @@ Map<int, Map> cutting = {
 };
 
 Map<int, Map> delivery = {
-  1: {"delivery": "تغليف", "deliveryId": 1},
-  2: {"delivery": "دون تغليف", "deliveryId": 2}
+  20: {"delivery": "تغليف", "deliveryId": 1},
+  21: {"delivery": "دون تغليف", "deliveryId": 2}
 };
 Map<int, Map> head = {
-  2: {"head": "بدون رأس", "headId": 2},
-  4: {"head": "سلخ", "headId": 4},
-  5: {"head": "شلوطة", "headId": 5}
+  30: {"head": "بدون رأس", "headId": 2},
+  31: {"head": "سلخ", "headId": 4},
+  32: {"head": "شلوطة", "headId": 5}
 };
 
 Map<int, String> productsUpdated = {
   1: "assets/23CD1691-B47E-4398-BEC6-97FE4751D028.jpeg",
   2: "assets/435D6E32-A1AB-443E-9F3E-50E327C59451.jpeg",
-  12: "sawakne.jpg",
-  15: "nagdy.jpg",
-  16: "hashy.jpg",
-  17: "teuos.jpg"
+  12: "assets/sawakne.jpg",
+  15: "assets/nagdy.jpg",
+  16: "assets/hashy.jpg",
+  17: "assets/teuos.jpg"
 };
 List<OrderItem> orderItems = [];
 OrderUser orderUser;
