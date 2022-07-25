@@ -67,7 +67,8 @@ class _ProjectAppState extends State<ProjectApp> {
                       child: Text(
                         "ملخص الطلب",
                         textAlign: TextAlign.center,
-                        style: TextStyle(fontSize: 25, color: Colors.lightBlue),
+                        style:
+                            TextStyle(fontSize: 25, color: Color(0xFF03A9F4)),
                       ),
                     ),
                     SingleChildScrollView(
