@@ -13,9 +13,9 @@ class Hashy extends StatefulWidget {
 }
 
 class _HashyState extends State<Hashy> {
-  int _group1 = 51;
-  int _group2 = 52;
-  int _group3 = 53;
+  dynamic _group1 = 51;
+  dynamic _group2 = 52;
+  dynamic _group3 = 53;
   int itemId = 16;
   int cuttingId, delievryId, sizeId;
   int priceNow = 0;

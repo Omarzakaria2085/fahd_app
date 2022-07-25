@@ -13,10 +13,10 @@ class Teuos extends StatefulWidget {
 }
 
 class _TeuosState extends State<Teuos> {
-  int _group1 = 51;
-  int _group2 = 52;
-  int _group3 = 53;
-  int _group4 = 54;
+  dynamic _group1 = 51;
+  dynamic _group2 = 52;
+  dynamic _group3 = 53;
+  dynamic _group4 = 54;
   int itemId = 17;
   int cuttingId, delievryId, sizeId, headId;
   int priceNow = 0;

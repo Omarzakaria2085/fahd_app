@@ -13,10 +13,10 @@ class Nagdy extends StatefulWidget {
 }
 
 class _NagdyState extends State<Nagdy> {
-  int _group1 = 51;
-  int _group2 = 52;
-  int _group3 = 53;
-  int _group4 = 54;
+  dynamic _group1 = 51;
+  dynamic _group2 = 52;
+  dynamic _group3 = 53;
+  dynamic _group4 = 54;
   int itemId = 15;
   int cuttingId, delievryId, sizeId, headId;
   int priceNow = 0;
