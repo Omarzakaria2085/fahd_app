@@ -31,7 +31,10 @@ class Api {
 
     final response = await http.post(
       url,
-      headers: {'Content-Type': 'application/json; charset=UTF-8'},
+      headers: {
+        "Accept": "application/json",
+        "Access-Control_Allow_Origin": "*"
+      },
       body: newOrder.toJson(),
     );
 
